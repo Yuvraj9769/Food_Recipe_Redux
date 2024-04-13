@@ -172,6 +172,10 @@
     .spinner{
       margin: 25px 0px;
     }
+    .container button{
+      padding: 12px 16px;
+      font-size: 14px;
+    }
     .card{
         width: 100%;
         max-width: 340px;
