@@ -1,0 +1,50 @@
+.About{
+    background-color: black;
+    color: white;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+.sub-about{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:  20px;
+    width: 80%;
+    padding-bottom: 5px;
+}
+
+.sub-about p{
+    font-size: 18px;
+    margin-left: 15px;
+}
+.sub-about h3{
+    font-size: 26px;
+}
+
+.sub-about ul{
+    margin-left: 15px;
+    list-style: none;
+}
+
+.sub-about ul li strong{
+    font-size: 20px;
+}
+
+.sub-about ul li{
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+.ptext strong{
+  font-size: 19px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .sub-about{
+        width: 100%;
+    }
+}

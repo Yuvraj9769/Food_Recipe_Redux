@@ -1,0 +1,133 @@
+.footer{
+    padding: 15px 10px;
+    display: flex;
+    height: auto;
+    flex-flow: column wrap;
+    gap: 25px;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-container div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+    padding: 10px 5px;
+}
+
+.main-container div p{
+    font-size: 17px;
+    transition: color 0.5s ease-in;
+}
+
+.main-container div p:first-child{
+    font-size: 19px;
+    font-weight: 700;
+
+}
+
+.main-container div p:first-child:hover{
+    cursor: pointer;
+    color: #42fa80;
+}
+
+.main-container div p:not(p:first-child):hover{
+    cursor: pointer;
+    color: red;
+}
+
+.getAppdiv img:hover{
+    cursor: pointer;
+}
+
+.footer button{
+    height: 28px;
+    width: 28px;
+    font-size: 26px;
+    border: none;
+    background-color: black;
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    color: white;
+    outline: none;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.getAppdiv p{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.footer button:hover{
+    cursor: pointer;
+}
+
+.copyright{
+    font-weight: 600;
+    color: rgb(189, 186, 186);
+}
+
+@media screen and (max-width: 767px) {
+    
+    .footer button{
+        font-size: 29px;
+    }
+    .main-container{
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+    .getAppdiv{
+        align-items: start;
+    }
+    .getAppdiv p{
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .main-container{
+        flex-flow: row wrap;
+        gap: 45px;
+        justify-content: start;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main-container{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .main-container{
+        justify-content: space-evenly;
+    }
+}

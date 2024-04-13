@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.app-container{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+}
+.app-container{
+    background-image: url("https://wallpapers.com/images/hd/food-4k-3gsi5u6kjma5zkj0.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+    .app-container{
+        background-size: contain;
+    }
+}

@@ -1,0 +1,60 @@
+.recipelist-text{
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 35px;
+}
+
+.recipelist-div{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 35px;
+}
+
+.container{
+    list-style-type: decimal;
+    font-size: 18px;
+    list-style-position: inside;
+}
+
+.container li{
+    margin: 8px 0px;
+    color: white;
+    transition: color 0.5s ease;
+}
+.container li:hover{
+    color: red;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.spinner{
+    color: white;
+    font-size: 95px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.spinner svg{
+    animation: spinner 1s ease normal infinite;
+}
+
+@keyframes spinner {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}

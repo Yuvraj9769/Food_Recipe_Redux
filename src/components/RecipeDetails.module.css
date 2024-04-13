@@ -1,0 +1,196 @@
+.container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 35px;
+}
+
+.container h1{
+    font-size: 38px;
+}
+
+.spinner{
+    color: white;
+    font-size: 95px;
+}
+
+.spinner svg{
+    animation: spinner 1s ease normal infinite;
+}
+
+@keyframes spinner {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+
+.card-container{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.card{
+    height: 450px;
+    width: 340px;
+    background-color: white;
+    border-radius: 7px;
+    padding: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.card img{
+    height: 190px;
+    border-radius: 12px;
+}
+
+.name{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.list-ingredients {
+    width: 100%;
+    list-style: none;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+  }
+
+  .list-ingredients h3{
+    width: 100%;
+  }
+
+  .list-ingredients span{
+    font-size: 17px;
+  }
+
+  .list-ingredients span{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .list-ingredients li {
+    white-space: nowrap;
+    display: inline;
+  }
+  
+  .list-instructions {
+    width: 100%;
+    list-style-type: decimal;
+    list-style-position: inside;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+  }
+
+  .list-instructions h3{
+    width: 100%;
+  }
+
+
+  .list-instructions span{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    font-size: 17px;
+  }
+
+  .list-instructions li{
+    white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  }
+
+  .cuisine{
+    font-size: 18px;
+    display: flex;
+    align-items: flex-start;
+    color: hsl(36, 100%, 50%);
+    width: 100%;
+  }
+
+  .cuisine  span:nth-child(1){
+    margin-right: 5px;
+    font-weight: 700;
+    color: black;
+  }
+
+  .cuisine svg{
+    font-size: 19px;
+  }
+
+  .container button{
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 10px 15px;
+    background-color: #1343c5;
+    color: white;
+  }
+
+  .container button:hover{
+    cursor: pointer;
+    background-color: #092e94;
+  }
+
+  .recipe{
+    margin: 20px 0px;
+    font-size: 32px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container{
+        padding: 20px 5px;
+    }
+    .card-container{
+        padding: 0;
+        gap: 35px;
+    }
+    .spinner{
+      margin: 25px 0px;
+    }
+    .card{
+        width: 100%;
+        max-width: 340px;
+        box-sizing: border-box;
+        height: 475px;
+    }
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    .card-container{
+        padding: 0;
+        gap: 45px;
+    }
+  }
+
+  @media screen and (min-width: 1536px) {
+    .card-container{
+        padding: 0;
+        gap: 45px;
+    }
+  }

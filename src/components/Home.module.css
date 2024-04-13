@@ -1,0 +1,129 @@
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.home-sub-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+}
+.home-sub-div::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 12px;
+}
+
+.msgdiv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    font-size: 38px;
+}
+
+h2{
+    font-size: 31px;
+}
+
+.msgdiv p{
+    font-size: 17px;
+}
+
+#discover{
+    text-align: center;
+}
+
+#discover li{
+    list-style: none;
+   
+    margin: 15px;
+}
+#save{
+    text-align: center;
+}
+
+#save li{
+    list-style: none;
+    margin: 15px;
+}
+
+#plan{
+    text-align: center;
+}
+
+#plan li{
+    list-style: none;
+    margin: 15px;
+}
+
+#inspire{
+    text-align: center;
+}
+
+#inspire li{
+    list-style: none;
+    margin: 15px;
+}
+
+#community{
+    text-align: center;
+}
+
+#community li{
+    list-style: none;
+    margin: 15px;
+}
+
+.endtext{
+    z-index: 2;
+    font-size: 18px;
+}
+
+.endtext strong{
+    margin: 0px 5px;
+}
+
+.add-recipy-btn{
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: #0059ff;
+    color: white;
+}
+
+.add-recipy-btn:hover{
+    cursor: pointer;
+    background-color: #0446be;
+}
+
+@media screen and (max-width: 768px) {
+    .home-sub-div{
+        width: 100%;
+    }
+}
+
+.home-sub-div section{
+    width: 100%;
+}
