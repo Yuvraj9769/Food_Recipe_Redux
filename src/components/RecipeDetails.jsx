@@ -33,7 +33,7 @@ const RecipeDetails = () => {
         <div className={`${styles["card-container"]}`}>
           {data.map((e, i) => (
             <div className={`${styles["card"]}`} key={nanoid()}>
-              <img src={e.image} alt="" />
+              <img src={e.image} alt="img" />
               <p className={`${styles["name"]}`}>{e.name}</p>
               <ul className={`${styles["list-ingredients"]}`}>
                 <h3>Ingredients: </h3>
